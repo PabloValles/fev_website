@@ -1,121 +1,118 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
+    // {
+    //   text: 'Homes',
+    //   links: [
+    //     {
+    //       text: 'Sass',
+    //       href: getPermalink('/homes/saas'),
+    //     },
+    //     {
+    //       text: 'Startup',
+    //       href: getPermalink('/homes/startup'),
+    //     },
+    //     {
+    //       text: 'Mobile App',
+    //       href: getPermalink('/homes/mobile-app'),
+    //     },
+    //     {
+    //       text: 'Personal',
+    //       href: getPermalink('/homes/personal'),
+    //     },
+    //   ],
+    // },
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'Sass',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      text: 'Home',
+      href: '/',
     },
     {
-      text: 'Pages',
+      text: 'Nosotros',
       links: [
         {
-          text: 'Features (Anchor Link)',
+          text: 'Conocenos (Anchor Link)',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
+          text: 'Servicios',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: 'Obras Sociales',
           href: getPermalink('/pricing'),
         },
         {
-          text: 'About us',
+          text: 'Sobre nosotros',
           href: getPermalink('/about'),
         },
         {
-          text: 'Contact',
+          text: 'Contacto',
           href: getPermalink('/contact'),
         },
         {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
+          text: 'Política de privacidad',
           href: getPermalink('/privacy'),
         },
       ],
     },
     {
-      text: 'Landing',
+      // TODO: Cambiar links y páginas referenciadas
+      text: 'Servicios',
       links: [
         {
-          text: 'Lead Generation',
+          text: 'Ginecología y obstetricia',
           href: getPermalink('/landing/lead-generation'),
         },
         {
-          text: 'Long-form Sales',
+          text: 'Pediatría',
           href: getPermalink('/landing/sales'),
         },
         {
-          text: 'Click-Through',
+          text: 'Traumatología',
           href: getPermalink('/landing/click-through'),
         },
         {
-          text: 'Product Details (or Services)',
+          text: 'Medicina general',
           href: getPermalink('/landing/product'),
         },
         {
-          text: 'Coming Soon or Pre-Launch',
+          text: 'PAMI',
           href: getPermalink('/landing/pre-launch'),
         },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
       ],
     },
+    // {
+    //   text: 'Blog',
+    //   links: [
+    //     {
+    //       text: 'Blog List',
+    //       href: getBlogPermalink(),
+    //     },
+    //     {
+    //       text: 'Article',
+    //       href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+    //     },
+    //     {
+    //       text: 'Article (with MDX)',
+    //       href: getPermalink('markdown-elements-demo-post', 'post'),
+    //     },
+    //     {
+    //       text: 'Category Page',
+    //       href: getPermalink('tutorials', 'category'),
+    //     },
+    //     {
+    //       text: 'Tag Page',
+    //       href: getPermalink('astro', 'tag'),
+    //     },
+    //   ],
+    // },
     {
-      text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
+      text: 'Contacto',
+      href: '/contact',
     },
   ],
-  actions: [{ type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }],
+  actions: [{ type: 'button', text: 'Whatsapp', href: 'https://wa.me/1XXXXXXXXXX' }], // TODO: Make the whatsapp link correctly
 };
 
 export const footerData = {

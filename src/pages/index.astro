@@ -20,25 +20,18 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
+  <!-- TODO: Cambiar el link de los botones e imágen -->
   <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}
+    callToAction={{ text: 'Contacto', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:mail-heart' }}
+    callToAction2={{ text: 'Servicios', href: '#features' }}
+    image={{ src: '~/assets/images/hero.png', alt: 'Nuestros profesionales' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
+      Tu bienestar es nuestra prioridad: <span class="text-accent dark:text-white highlight"> Centro Médico FEV</span>. <span class="hidden xl:inline">Comprometidos con una atención cálida y profesional</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-       Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages
-      & Blogs.
+      <span class="font-semibold">Descubre FEV</span>: Tu destino para el cuidado de la salud en Mendoza. Especialidades en Ginecología, Pediatría, Traumatología y Medicina General. Profesionales comprometidos, turnos flexibles y atención personalizada.
     </Fragment>
   </Hero>
 
@@ -47,18 +40,18 @@ const metadata = {
   <Note />
 
   <!-- Features Widget *************** -->
-
+  <!-- TODO: Terminar las cards de features -->
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="Servicios que ofrecemos en nuestro centro médico"
+    subtitle="Descubre las Distintivas Características de Nuestros Servicios en el Centro Médico FEV, Pensadas para tu Bienestar Integral."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Ginecología y Obstetricia',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Acompañamos cada etapa de tu vida con atención personalizada, desde la adolescencia hasta la maternidad.',
+        icon: 'tabler:user-heart',
       },
       {
         title: 'Ready-to-use Components',
